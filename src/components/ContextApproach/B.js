@@ -1,10 +1,8 @@
 import React from "react";
-import context from "./context";
 
-const B = () => {
-  const { b } = React.useContext(context);
+const B = ({ value }) => {
   console.log("Rendering context:B");
-  return <div>B: {JSON.stringify(b)}</div>;
+  return <div>B: {JSON.stringify(value)}</div>;
 };
 
-export default B;
+export default React.memo(B);

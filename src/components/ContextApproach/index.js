@@ -20,10 +20,10 @@ const ContextApproach = () => {
               <Switcher />
             </td>
             <td>
-              <A />
+              <A value={a} />
             </td>
             <td>
-              <B />
+              <B value={b} />
             </td>
           </tr>
         </tbody>
