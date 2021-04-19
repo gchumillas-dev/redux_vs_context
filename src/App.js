@@ -9,26 +9,36 @@ function App() {
 
   return (
     <context.Provider value={{ a, b }}>
-      <div>
-        <label>
-          <input
-            type="checkbox"
-            checked={a}
-            onChange={() => setA((value) => !value)}
-          />
-          <span>Toggle A</span>
-        </label>
-        <label>
-          <input
-            type="checkbox"
-            checked={b}
-            onChange={() => setB((value) => !value)}
-          />
-          <span>Toggle B</span>
-        </label>
-      </div>
-      <A />
-      <B />
+      <table border="1" cellPadding={8} cellSpacing={8}>
+        <tbody>
+          <tr>
+            <td>
+              <label>
+                <input
+                  type="checkbox"
+                  checked={a}
+                  onChange={() => setA((value) => !value)}
+                />
+                <span>Toggle A</span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  checked={b}
+                  onChange={() => setB((value) => !value)}
+                />
+                <span>Toggle B</span>
+              </label>
+            </td>
+            <td>
+              <A />
+            </td>
+            <td>
+              <B />
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </context.Provider>
   );
 }
