@@ -1,5 +1,5 @@
 {
-  "name": "context",
+  "name": "redux_vs_context",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
