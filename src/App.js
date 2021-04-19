@@ -9,7 +9,7 @@ function App() {
 
   return (
     <context.Provider value={{ a, b }}>
-      <table border="1" cellPadding={8} cellSpacing={8}>
+      <table border={1} cellPadding={8} cellSpacing={8}>
         <tbody>
           <tr>
             <td>
