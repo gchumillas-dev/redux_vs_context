@@ -3,7 +3,7 @@ import context from "./context";
 
 const B = () => {
   const { b } = React.useContext(context);
-  console.log("b");
+  console.log("Rendering context:B");
   return <div>B: {JSON.stringify(b)}</div>;
 };
 

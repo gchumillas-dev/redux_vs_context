@@ -1,4 +1,5 @@
 import React from "react";
+import Switcher from "./Switcher";
 import A from "./A";
 import B from "./B";
 import context from "./context";
@@ -6,29 +7,16 @@ import context from "./context";
 const ContextApproach = () => {
   const [a, setA] = React.useState(false);
   const [b, setB] = React.useState(false);
+  const toggleA = () => setA((value) => !value);
+  const toggleB = () => setB((value) => !value);
 
   return (
-    <context.Provider value={{ a, b }}>
+    <context.Provider value={{ a, b, toggleA, toggleB }}>
       <table border={1} cellPadding={8} cellSpacing={8}>
         <tbody>
           <tr>
             <td>
-              <label>
-                <input
-                  type="checkbox"
-                  checked={a}
-                  onChange={() => setA((value) => !value)}
-                />
-                <span>Toggle A</span>
-              </label>
-              <label>
-                <input
-                  type="checkbox"
-                  checked={b}
-                  onChange={() => setB((value) => !value)}
-                />
-                <span>Toggle B</span>
-              </label>
+              <Switcher />
             </td>
             <td>
               <A />
