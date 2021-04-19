@@ -1,5 +1,5 @@
 import React from "react";
-import context from "../context";
+import context from "./context";
 
 const B = () => {
   const { b } = React.useContext(context);
