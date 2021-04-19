@@ -12,6 +12,7 @@ const ContextApproach = () => {
 
   return (
     <context.Provider value={{ a, b, toggleA, toggleB }}>
+      <h3>Context-API approach</h3>
       <table border={1} cellPadding={8} cellSpacing={8}>
         <tbody>
           <tr>

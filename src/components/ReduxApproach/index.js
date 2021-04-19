@@ -5,21 +5,24 @@ import ReduxB from "./B";
 
 function ReduxApproach() {
   return (
-    <table border={1} cellPadding={8} cellSpacing={8}>
-      <tbody>
-        <tr>
-          <td>
-            <Switcher />
-          </td>
-          <td>
-            <ReduxA />
-          </td>
-          <td>
-            <ReduxB />
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <>
+      <h3>Redux approach</h3>
+      <table border={1} cellPadding={8} cellSpacing={8}>
+        <tbody>
+          <tr>
+            <td>
+              <Switcher />
+            </td>
+            <td>
+              <ReduxA />
+            </td>
+            <td>
+              <ReduxB />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </>
   );
 }
 
