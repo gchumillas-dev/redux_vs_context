@@ -7,4 +7,4 @@ const B = () => {
   return <div>B: {JSON.stringify(b)}</div>;
 };
 
-export default React.memo(B);
+export default B;
